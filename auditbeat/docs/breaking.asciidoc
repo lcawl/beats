@@ -1,12 +1,24 @@
 [[auditbeat-breaking-changes]]
-== Breaking changes in 6.2
+= Breaking changes 
 
+[partintro]
+--
 As a general rule, we strive to keep backwards compatibility between minor
-versions (e.g.  6.x to 6.y) so you can upgrade without any configuration file
-changes, but there are breaking changes between the earlier beta releases and
-the 6.2 GA release.
+versions (e.g.  7.x to 7.y) so you can upgrade without any configuration file
+changes. 
 
-There are changes that affect both the configuration and the event schema.
+* <<auditbeat-breaking-changes-6.2>>
+
+--
+
+[[auditbeat-breaking-changes-6.2]]
+== Breaking changes in 6.2
+++++
+<titleabbrev>6.2</titleabbrev>
+++++
+
+There are breaking changes between the earlier beta releases and the 6.2 GA 
+release. There are changes that affect both the configuration and the event schema.
 
 [float]
 === Configuration Changes
@@ -123,4 +135,3 @@ moved under the `file` namespace.]
 |`audit.file.hash`         |`hash`
 |`audit.file`              |`file`
 |======================
-

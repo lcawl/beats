@@ -21,11 +21,11 @@ include::./communitybeats.asciidoc[]
 
 include::./gettingstarted.asciidoc[]
 
-include::./breaking.asciidoc[]
-
 include::./upgrading.asciidoc[]
 
 include::./config-file-format.asciidoc[]
+
+include::./breaking.asciidoc[]
 
 include::./release.asciidoc[]
 
