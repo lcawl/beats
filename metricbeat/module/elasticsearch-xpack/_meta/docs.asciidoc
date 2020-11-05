@@ -1,0 +1,21 @@
+The `elasticsearch-xpack` module collects metrics for the
+{stack-monitor-features} in {kib}.
+
+[float]
+=== Compatibility
+
+The `elasticsearch-xpack` module works with {es} 7.2.0 and later.
+
+[float]
+=== Module-specific configuration notes
+
+Like other {beatname_uc} modules, the `elasticsearch-xpack` module accepts a
+`hosts` configuration setting. This setting can contain a list of entries. The
+related `scope` setting determines how each entry in the `hosts` list is
+interpreted by the module.
+
+* If `scope` is set to `node` (default), each entry in the `hosts` list
+indicates a distinct node in an {es} cluster.
+* If `scope` is set to `cluster`, each entry in the `hosts` list indicates a
+single endpoint for a distinct {es} cluster (for example, a load-balancing
+proxy fronting the cluster).
